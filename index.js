@@ -25,12 +25,12 @@ let buildExport = params => {
     }
 
     //build the header row
-    let header = []
+    let header = [];
     for (let col in specification) {
-      header.push({
+      header[specification[col].columnIndex] = {
         value: specification[col].displayName,
         style: specification[col].headerStyle || ''
-      })
+      }
 
       if (specification[col].width) {
         if (Number.isInteger(specification[col].width)) {
@@ -41,7 +41,7 @@ let buildExport = params => {
           throw 'Provide column width as a number'
         }
       } else {
-        config.cols.push({})
+        config.cols.push({});
       }
 
     }
@@ -67,9 +67,9 @@ let buildExport = params => {
             style: specification[col].cellStyle
           }
         }
-        row.push(cell_value) // Push new cell to the row
+        row[specification[col].columnIndex] = cell_value; // Push new cell to the row
       }
-      data.push(row) // Push new row to the sheet
+      data.push(row); // Push new row to the sheet
     })
 
     sheets.push({
