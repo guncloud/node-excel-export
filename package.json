@@ -1,14 +1,14 @@
 {
-  "name": "node-excel-export",
-  "version": "1.4.2",
-  "description": "Node-Excel-Export",
+  "name": "node-excel-export-gc",
+  "version": "1.4.3",
+  "description": "Node-Excel-Export-Gc",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/andreyan-andreev/node-excel-export.git"
+    "url": "git+https://github.com/andreyan-andreev/node-excel-export-gc.git"
   },
   "keywords": [
     "excel"
@@ -16,9 +16,9 @@
   "author": "Andreyan Andreev <andreyan.andreev@live.com>",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/andreyan-andreev/node-excel-export/issues"
+    "url": "https://github.com/andreyan-andreev/node-excel-export-gc/issues"
   },
-  "homepage": "https://github.com/andreyan-andreev/node-excel-export#readme",
+  "homepage": "https://github.com/andreyan-andreev/node-excel-export-gc#readme",
   "dependencies": {
     "xlsx-style": "^0.8.13"
   }
