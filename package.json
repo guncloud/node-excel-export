@@ -1,6 +1,6 @@
 {
   "name": "node-excel-export-gc",
-  "version": "1.4.3",
+  "version": "1.4.4",
   "description": "Node-Excel-Export-Gc",
   "main": "index.js",
   "scripts": {
