@@ -27,9 +27,12 @@ let buildExport = params => {
     //build the header row
     let header = [];
     for (let col in specification) {
-      header[specification[col].columnIndex] = {
-        value: specification[col].displayName,
-        style: specification[col].headerStyle || ''
+      
+      if(specification[col].displayName){ //make displayName optionable
+      	header[specification[col].columnIndex] = {
+	        value: specification[col].displayName,
+	        style: specification[col].headerStyle || ''
+	      }
       }
 
       if (specification[col].width) {
@@ -45,7 +48,11 @@ let buildExport = params => {
       }
 
     }
-    data.push(header) //Inject the header at 0
+
+    let checkDisplayName = header.filter((el, i) => el !== "");
+    if (checkDisplayName.length > 0) {
+      data.push(header); //Inject the header at 0
+    }
 
     dataset.forEach(record => {
       let row = []

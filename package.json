@@ -8,7 +8,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/andreyan-andreev/node-excel-export-gc.git"
+    "url": "git+https://github.com/guncloud/node-excel-export-gc.git"
   },
   "keywords": [
     "excel"
@@ -16,9 +16,9 @@
   "author": "Andreyan Andreev <andreyan.andreev@live.com>",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/andreyan-andreev/node-excel-export-gc/issues"
+    "url": "https://github.com/guncloud/node-excel-export-gc/issues"
   },
-  "homepage": "https://github.com/andreyan-andreev/node-excel-export-gc#readme",
+  "homepage": "https://github.com/guncloud/node-excel-export-gc#readme",
   "dependencies": {
     "xlsx-style": "^0.8.13"
   }
